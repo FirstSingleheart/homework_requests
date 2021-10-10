@@ -35,7 +35,7 @@ class YandexDisk:
 if __name__ == '__main__':
     path_to_file = os.path.join(os.getcwd(), 'test file.txt')
     # print(path_to_file)
-    token = "AQAAAAAF5wpHAADLW49NVCGEuEXOjuckYnhI9Bc"
+    token = " "
 
     ya_disk = YandexDisk(token)
     ya_disk.upload_file_to_disk(path_to_file)

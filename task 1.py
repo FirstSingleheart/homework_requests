@@ -6,7 +6,7 @@ TOKEN = "2619421814940190"
 
 def name_intelligence(name):
     url = f"https://superheroapi.com/api/{TOKEN}/search/{name}"
-    params = {"name": f"{name}"}
+    params = {"name": name}
     response = requests.get(url=url, params=params, timeout=5)
     resp = response.json()
     return resp['results'][0]['powerstats']['intelligence']
